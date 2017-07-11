@@ -1,0 +1,46 @@
+.header {
+    background-color: #0a0a0a;
+}
+
+.header h4 {
+    color: #5a462b;
+}
+
+.header img {
+    display: block;
+    margin: auto;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.main-section img, .order-section img {
+    width: 100%;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.padding-30 {
+    padding: 27.5px;
+}
+
+.pad-right-0 {
+    padding-right: 0 !important;
+}
+
+.pad-left-0 {
+    padding-left: 0 !important;
+}
+
+.order-section .col-md-4 {
+    padding: 2px !important;
+}
+
