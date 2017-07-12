@@ -1,14 +1,43 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+p {
+    font-size: 16px;
+}
+
+h4, h1, li, a, p {
+    font-family: 'Myriad Pro';
+}
+
+h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.nav-section li a {
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .header {
     background-color: #0a0a0a;
 }
 
 .header h4 {
-    color: #5a462b;
+    color: #ad854d;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .header img {
     display: block;
     margin: auto;
+    padding: 45px 0 20px 0;
+    width: 200px;
 }
 
 .navbar .navbar-nav {
@@ -40,7 +69,255 @@
     padding-left: 0 !important;
 }
 
-.order-section .col-md-4 {
+.order-section> .col-md-8> .col-md-4 {
     padding: 2px !important;
 }
 
+.navbar-default {
+     background-color: transparent;
+     border: 0;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-section .nav > li > span {
+    padding: 20px 15px 15px 15px;
+    font-size: 7px;
+    color: #ad854d;
+}
+
+.nav-section .nav > li a {
+    padding: 15px 0 0 0;
+}
+
+.navbar {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.carousel-caption {
+    padding-bottom: 140px;
+    right: 17%;
+    left: 17%;
+}
+
+.carousel-caption h1 {
+    font-size: 46px;
+}
+
+.choose-date-section {
+    background-color: #322b23;
+    padding: 55px 0 50px 0;
+}
+
+.choose-date-section p {
+    color: #fff;
+    font-weight: 300;
+}
+
+#from, #to, #days, #email {
+    width: 90%;
+}
+
+.choose-date-section input {
+    background-color: #5a4d3f;
+    border: 0;
+    height: 42px;
+    color: #fff;
+    padding: 10px;
+}
+
+.choose-date-section i {
+    float: right;
+    padding-top: 15px;
+    color: #fff;
+}
+
+.choose-date-section input::-webkit-input-placeholder {color:#fff; padding: 10px}
+.choose-date-section input::-moz-placeholder          {color:#fff; padding: 10px}/* Firefox 19+ */
+.choose-date-section input:-moz-placeholder           {color:#fff; padding: 10px}/* Firefox 18- */
+.choose-date-section input:-ms-input-placeholder      {color:#fff; padding: 10px}
+
+.choose-date-section input::-webkit-outer-spin-button,
+.choose-date-section input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    /*margin: 10px; !* <-- Apparently some margin are still there even though it's hidden *!*/
+}
+
+.reserve p {
+    color: #7c6a53;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 32px;
+}
+
+.reserve {
+    height: 71px;
+    display: table;
+    padding-top: 26px;
+    cursor: pointer;
+}
+
+/*...........*/
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #322b23;
+    display: block;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    right: 28px;
+    top: 4px;
+}
+
+.main-section {
+    padding: 35px 30px 30px 45px;
+    background-color: #111111;
+}
+
+.order-section {
+    background-image: url(../img/main-section-bg.png);
+    background-size: 100%;
+    background-position-y: 15px;
+    background-repeat: no-repeat;
+    background-color: #0c0c0d;
+}
+
+.main-section .col-md-5 p {
+    padding-top: 40px;
+}
+.main-section .col-md-5 p, .order-section p {
+    color: #b89f80;
+}
+.gallery h3 {
+    padding: 0 0 20px 30px;
+}
+
+.features-section {
+    background-color: #111111;
+}
+
+.features-section h3 {
+    padding: 35px;
+}
+
+.features-section li {
+    list-style: none;
+    color: #b89f80;
+}
+
+.rent-house-section {
+    background-image: url('../img/rent-house-section-bg.png');
+    min-height: 400px;
+    display: table;
+    width: 100%;
+}
+
+.rent-house-section div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.rent-house-section div p {
+    color: #b89f80;
+    font-size: 20px;
+}
+
+.rent-house-section h3 {
+    padding-bottom: 15px;
+}
+
+.contact-section {
+    background-color: #111111;
+}
+
+.contact-section h3 {
+    padding: 30px;
+}
+
+.map {
+    padding: 0 60px 60px;
+}
+
+.footer-info p {
+    padding: 30px 0 30px 10px;
+    color: #fff;
+    display: inline-block;
+}
+
+.footer-info i {
+    color: #fff;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.footer-info {
+    background-image: url("../img/bg.png");
+}
+
+.clear {
+    clear: both;
+}
+
+.social a {
+    padding: 10px;
+    color: #fff;
+}
+
+.footer-info .container {
+    padding: 0 60px 0 60px;
+}
+
+.footer-section img {
+    width: 70px;
+}
+
+.footer-section .col-md-4, .footer-section .col-md-4 p {
+    padding: 20px 0 0 0;
+}
+
+.footer-section .col-md-4 span {
+    color: #ac8a31;
+}
+
+.footer-section {
+    color: #818181;
+}
+
+.footer-section nav {
+    padding-top: 47px;
+}

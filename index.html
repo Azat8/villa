@@ -7,43 +7,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/datepicker3.css">
     <title>Document</title>
 </head>
 <body>
 <div class="header">
     <img src="img/logo.png">
     <h4 class="text-center">TURN MOMENTS INTO MEMORIES</h4>
-</div>
-<div class="nav-section">
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
-            <div class="navbar-header hidden-lg hidden-md">
-                <button type="button" class="collapsed navbar-toggle" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> <span class="icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-brand">Brand</a>
+    <div class="nav-section">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header hidden-lg hidden-md">
+                    <button type="button" class="collapsed navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-8" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-circle"></span>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-circle"></span>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-circle"></span>
+                        </li>
+                        <li>
+                            <a href="#">Order</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-circle"></span>
+                        </li>
+                        <li>
+                            <a href="#">Main Features</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-circle"></span>
+                        </li>
+                        <li>
+                            <a href="#">Rent This House</a>
+                        </li>
+                        <li>
+                            <span class="fa fa-circle"></span>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </div>
 
 <div class="slider-section">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+        <!--<ol class="carousel-indicators">-->
+            <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+            <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+        <!--</ol>-->
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
@@ -58,51 +96,66 @@
             <div class="item">
                 <img src="img/slider1.png" alt="New York">
             </div>
+
+            <div class="carousel-caption">
+                <h1>MORE THAN A GOOD NIGHTS SLEEP </h1>
+            </div>
         </div>
 
         <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
+            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+            <!--<span class="sr-only">Previous</span>-->
+        <!--</a>-->
+        <!--<a class="right carousel-control" href="#myCarousel" data-slide="next">-->
+            <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+            <!--<span class="sr-only">Next</span>-->
+        <!--</a>-->
     </div>
 </div>
 
 <div class="choose-date-section container-fluid">
-    <div class="col-md-2">
-        <p>From</p>
-        <input type="text">
+    <div class="col-md-2 col-md-offset-2">
+        <div class="form-group">
+            <p>From</p>
+            <div class="icon-addon addon-lg">
+                <label for="from" class="fa fa-calendar" rel="tooltip"></label>
+                <input type="text" placeholder="Choose date" class="" id="from">
+            </div>
+        </div>
     </div>
     <div class="col-md-2">
-        <p>To</p>
-        <input type="text">
+        <div class="form-group">
+            <p>To</p>
+            <div class="icon-addon addon-lg">
+                <label for="to" class="fa fa-calendar" rel="tooltip"></label>
+                <input type="text" placeholder="Choose date" class="" id="to">
+            </div>
+        </div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-1">
         <p>Days</p>
-        <input type="number">
+        <input id="days" type="number">
     </div>
     <div class="col-md-2">
         <p>Email</p>
-        <input type="text">
+        <input id="email" type="text">
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 reserve">
         <p>Reservation</p>
     </div>
 </div>
 
 <div class="main-section container-fluid">
-    <div class="col-md-6">
+    <div class="col-md-5">
         <h3>Welcome</h3>
         <p>(OWNER)  Rent this house in Yerevan   (long term, short term)
             This exceptional 2 floor house is located 5 minutes walk from
             Theater of  Opera and Ballet, Republic  Square, Cascade  with
             beautiful view of Ararat mountain.</p>
     </div>
-    <div class="col-md-6 gallery ">
+    <div class="col-md-7 gallery ">
+        <h3>Gallery</h3>
         <div class="col-md-6 padding-30">
             <img src="img/gallery/1.png" alt="">
         </div>
@@ -127,7 +180,7 @@
     </div>
 </div>
 
-<div class="order-section container-fluid">
+<div class="order-section container-fluid pad-right-0">
     <div class="col-md-8">
         <div class="col-md-4">
             <img src="img/order/1.png" alt="">
@@ -139,7 +192,7 @@
             <img src="img/order/3.png" alt="">
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
         <h3>ORDER</h3>
         <p>
             One of the main particular qualities is
@@ -151,7 +204,7 @@
 
 <div class="features-section container-fluid">
     <h3 class="text-center">MAIN FEATURES</h3>
-    <div class="row">
+    <div class="col-md-10 col-md-offset-1">
         <div class="col-md-4">
             <ul>
                 <li>newly built</li>
@@ -187,31 +240,101 @@
 </div>
 
 <div class="rent-house-section">
-    <h3 class="text-center ">RENT THIS HOUSE</h3>
-    <p>Rent this house in Yerevan (long term, short term)</p>
+    <div>
+        <h3 class="text-center ">RENT THIS HOUSE</h3>
+        <p class="text-center">Rent this house in Yerevan (long term, short term)</p>
+    </div>
 </div>
 
 <div class="contact-section">
     <h3 class="text-center">CONTACT US</h3>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="350px" frameborder="0" style="border:0"></iframe>
+    </div>
 
 </div>
 
-<div class="footer-section container">
-    <div class="col-md-6">
-        <p><i class="fa fa-phone"></i> +374 77 49 10 00</p>
-        <p><i class="fa fa-home"></i> RA, Proshyan 1st lane  70/5</p>
+<div class="footer-info">
+    <div class="container">
+        <div class="col-md-6">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+374 77 49 10 00</p>
+            </div>
+            <div>
+                <i class="fa fa-home"></i>
+                <p>RA, Proshyan 1st lane  70/5</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="pull-right">
+                <i class="fa fa-envelope-o"></i>
+                <p  class="text-right">e-mail: tamhovhannisyan@yahoo.com</p>
+            </div>
+            <div class="clear"></div>
+            <div class="pull-right social">
+                <p class="text-right">
+                    <span><a href="">FACEBOOK</a></span>
+                    <span><a href="">TWITTER</a></span>
+                    <span><a href="">GOOGLE+</a></span>
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-6">
-        <p  class="text-right"><i class="fa fa-envelope-o"></i> e-mail: tamhovhannisyan@yahoo.com</p>
-        <p class="text-right">
-            <span>FACEBOOK</span>
-            <span>TWITTER</span>
-            <span>GOOGLE+</span>
-        </p>
+</div>
+
+<div class="footer-section container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="img/footer-logo.png" alt="">
+            <p>Design and development by <span>ASTUDIO</span></p>
+        </div>
+        <div class="col-md-8">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header hidden-lg hidden-md">
+                        <button type="button" class="collapsed navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand">Brand</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#">Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Main Features</a>
+                            </li>
+                            <li>
+                                <a href="#">Rent This House</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </div>
 </div>
 
 <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 </html>
